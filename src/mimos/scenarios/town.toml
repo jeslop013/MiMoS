@@ -1,0 +1,73 @@
+# Parameters of the synthetic example town (mimos.scenarios.town). The generator copies this
+# file into <out>/config.toml and fills in the [run] paths, the number of agents and the sample
+# share. Travel-time and distance terms follow the published MATSim Open Berlin scoring; the
+# mode constants are round, made-up values that give a plausible mix of modes. The town is made
+# up, so nothing here is a calibration.
+
+[run]
+sample_random = false                 # the town's agenda files contain exactly the simulated agents
+it_number = 10
+print_it = 1000                       # per-iteration CSVs only for iteration 0
+seed = 0
+log_level = "WARNING"
+threads = 0
+legacy_mode = false
+
+[utility]
+beta_m = -1.0
+C_limit = -100.0
+C_walk = 0.0
+C_bike = -3.0
+C_rent_bike = -3.0
+C_drive = -1.0
+C_public = 0.0
+C_transfer = -1.0
+beta_trav_public = -6.88
+beta_trav_rent_bike = -6.88
+beta_trav_walk = -6.88
+beta_trav_bike = -6.88
+beta_trav_no_cycleway = 0.0
+beta_trav_drive = -6.88
+beta_trav_delay = -6.88
+beta_d_public = -1e-3
+beta_d_walk = -1e-3
+beta_d_rent_bike = 0.0
+beta_d_bike = 0.0
+beta_d_drive = 0.0
+gamma_d_public = 0.0
+gamma_d_rent_bike = 0.0
+gamma_d_bike = 0.0
+gamma_d_drive = 0.149
+daily_cost_drive = 5.0
+daily_cost_public = 3.0
+jam_penalty = 24.0
+departure_correction = 0.0
+
+[public_transport]
+city_bus_cap = 80
+reg_bus_cap = 105
+cercanias_cap = 900
+ticket = 0.0
+bike_ticket = 0.0
+
+[drive]
+t_s = 0.000833333333333333333         # 3 s safety time between cars
+car_access_speed = 15.0
+fifo_link_exit = true
+stuck_time = 0.008333333333333333     # 30 s
+
+[memory]
+alpha_l_i = 0.05
+alpha_l_f = 0.2
+alpha_f_i = 0.1
+alpha_f_f = 0.0
+k_min = 5
+k_max = 25
+
+[choice]
+beta_choice = 1.0
+mnl_choice = false
+
+[ownership]
+p_car = 1.0
+p_bike = 1.0

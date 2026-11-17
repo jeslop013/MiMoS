@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use MiMoS, please cite the thesis in which the model was introduced."
+title: "MiMoS: Microscopic Mobility Simulator"
+type: software
+authors:
+  - family-names: "Moreno López"
+    given-names: "Jesús Arturo"
+version: 0.1.0
+date-released: 2026-11-17
+license: GPL-3.0-or-later
+repository-code: "https://github.com/jeslop013/MiMoS"
+keywords:
+  - agent-based model
+  - urban mobility
+  - traffic simulation
+  - emissions
+preferred-citation:
+  type: thesis
+  authors:
+    - family-names: "Moreno López"
+      given-names: "Jesús Arturo"
+  title: "An Agent-Based Journey in Social Systems Research: Motivations & Applications"
+  year: 2025
+  url: "https://ifisc.uib-csic.es/en/publications/an-agent-based-journey-in-social-systems-research/"
+  degree: "PhD"
+  institution:
+    name: "Universitat de les Illes Balears"

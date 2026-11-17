@@ -1,0 +1,10 @@
+# Example targets file for the report tests: MADE-UP numbers, same schema as a survey targets file.
+# Real use: a city survey's modal split by "basic mode".
+[scope]
+max_trip_km = 50.0
+
+[trips]                    # trips per day (made up)
+walk = 3000
+pt = 1000
+car = 2000
+bike = 100

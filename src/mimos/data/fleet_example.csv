@@ -1,0 +1,75 @@
+category,fuel,segment,euro,share
+Passenger Cars,Petrol,Medium,ECE 15/04,0.00752
+Passenger Cars,Petrol,Medium,Euro 1,0.01128
+Passenger Cars,Petrol,Medium,Euro 2,0.02632
+Passenger Cars,Petrol,Medium,Euro 3,0.04888
+Passenger Cars,Petrol,Medium,Euro 4,0.06768
+Passenger Cars,Petrol,Medium,Euro 5,0.06392
+Passenger Cars,Petrol,Medium,Euro 6 a/b/c,0.07520
+Passenger Cars,Petrol,Medium,Euro 6 d-temp,0.03760
+Passenger Cars,Petrol,Medium,Euro 6 d/e,0.03760
+Passenger Cars,Diesel,Medium,Conventional,0.00720
+Passenger Cars,Diesel,Medium,Euro 1,0.01080
+Passenger Cars,Diesel,Medium,Euro 2,0.02520
+Passenger Cars,Diesel,Medium,Euro 3,0.04680
+Passenger Cars,Diesel,Medium,Euro 4,0.06480
+Passenger Cars,Diesel,Medium,Euro 5,0.06120
+Passenger Cars,Diesel,Medium,Euro 6 a/b/c,0.07200
+Passenger Cars,Diesel,Medium,Euro 6 d-temp,0.03600
+Passenger Cars,Diesel,Medium,Euro 6 d/e,0.03600
+Passenger Cars,Battery electric,Medium,Conventional,0.00080
+Passenger Cars,Battery electric,Medium,Euro 1,0.00120
+Passenger Cars,Battery electric,Medium,Euro 2,0.00280
+Passenger Cars,Battery electric,Medium,Euro 3,0.00520
+Passenger Cars,Battery electric,Medium,Euro 4,0.00720
+Passenger Cars,Battery electric,Medium,Euro 5,0.00680
+Passenger Cars,Battery electric,Medium,Euro 6 a/b/c,0.00800
+Passenger Cars,Battery electric,Medium,Euro 6 d-temp,0.00400
+Passenger Cars,Battery electric,Medium,Euro 6 d/e,0.00400
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Conventional,0.00048
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 1,0.00072
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 2,0.00168
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 3,0.00312
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 4,0.00432
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 5,0.00408
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 6 a/b/c,0.00480
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 6 d-temp,0.00240
+Passenger Cars,LPG Bifuel ~ LPG,Medium,Euro 6 d/e,0.00240
+Light Commercial Vehicles,Diesel,N1-II,Conventional,0.00170
+Light Commercial Vehicles,Diesel,N1-II,Euro 1,0.00255
+Light Commercial Vehicles,Diesel,N1-II,Euro 2,0.00595
+Light Commercial Vehicles,Diesel,N1-II,Euro 3,0.01105
+Light Commercial Vehicles,Diesel,N1-II,Euro 4,0.01530
+Light Commercial Vehicles,Diesel,N1-II,Euro 5,0.01445
+Light Commercial Vehicles,Diesel,N1-II,Euro 6 a/b/c,0.01700
+Light Commercial Vehicles,Diesel,N1-II,Euro 6 d-temp,0.00850
+Light Commercial Vehicles,Diesel,N1-II,Euro 6 d/e,0.00850
+Light Commercial Vehicles,Petrol,N1-II,Conventional,0.00026
+Light Commercial Vehicles,Petrol,N1-II,Euro 1,0.00039
+Light Commercial Vehicles,Petrol,N1-II,Euro 2,0.00091
+Light Commercial Vehicles,Petrol,N1-II,Euro 3,0.00169
+Light Commercial Vehicles,Petrol,N1-II,Euro 4,0.00234
+Light Commercial Vehicles,Petrol,N1-II,Euro 5,0.00221
+Light Commercial Vehicles,Petrol,N1-II,Euro 6 a/b/c,0.00260
+Light Commercial Vehicles,Petrol,N1-II,Euro 6 d-temp,0.00130
+Light Commercial Vehicles,Petrol,N1-II,Euro 6 d/e,0.00130
+Light Commercial Vehicles,Battery electric,N1-II,Conventional,0.00004
+Light Commercial Vehicles,Battery electric,N1-II,Euro 1,0.00006
+Light Commercial Vehicles,Battery electric,N1-II,Euro 2,0.00014
+Light Commercial Vehicles,Battery electric,N1-II,Euro 3,0.00026
+Light Commercial Vehicles,Battery electric,N1-II,Euro 4,0.00036
+Light Commercial Vehicles,Battery electric,N1-II,Euro 5,0.00034
+Light Commercial Vehicles,Battery electric,N1-II,Euro 6 a/b/c,0.00040
+Light Commercial Vehicles,Battery electric,N1-II,Euro 6 d-temp,0.00020
+Light Commercial Vehicles,Battery electric,N1-II,Euro 6 d/e,0.00020
+L-Category,Petrol,Motorcycles 4-stroke 250 - 750 cm³,Conventional,0.01050
+L-Category,Petrol,Motorcycles 4-stroke 250 - 750 cm³,Euro 1,0.00700
+L-Category,Petrol,Motorcycles 4-stroke 250 - 750 cm³,Euro 2,0.00700
+L-Category,Petrol,Motorcycles 4-stroke 250 - 750 cm³,Euro 3,0.02100
+L-Category,Petrol,Motorcycles 4-stroke 250 - 750 cm³,Euro 4,0.01400
+L-Category,Petrol,Motorcycles 4-stroke 250 - 750 cm³,Euro 5,0.01050
+L-Category,Petrol,Mopeds 2-stroke <50 cm³,Conventional,0.00900
+L-Category,Petrol,Mopeds 2-stroke <50 cm³,Euro 1,0.00600
+L-Category,Petrol,Mopeds 4-stroke <50 cm³,Euro 2,0.00900
+L-Category,Petrol,Mopeds 4-stroke <50 cm³,Euro 4,0.00300
+L-Category,Petrol,Mopeds 4-stroke <50 cm³,Euro 5,0.00300

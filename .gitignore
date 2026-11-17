@@ -1,0 +1,46 @@
+# --- Data and results: never committed (a city's inputs take many GB) ------
+/data/
+results/
+runs/
+# generated example scenarios (mimos example / mimos demo)
+examples/
+*.pkl
+*.parquet
+*.xlsx
+*.numbers
+*.pdf
+*.mp4
+# Large network and population CSVs live outside the repo; small test fixtures go in tests/fixtures
+*.csv
+!tests/fixtures/**/*.csv
+# package data (emission factors, example fleet), see src/mimos/data/SOURCES.md
+!src/mimos/data/*.csv
+
+# --- macOS metadata -------------------------------------------------------
+.DS_Store
+._*
+__MACOSX/
+
+# --- Build artefacts ------------------------------------------------------
+build/
+_skbuild/
+dist/
+*.dSYM/
+*.o
+*.obj
+*.exe
+*.pyd
+*.so
+
+# --- Python ---------------------------------------------------------------
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# --- Editors --------------------------------------------------------------
+.vscode/
+.idea/
+
+# the demo gallery (docs/gallery) is published on purpose
+!docs/gallery/**

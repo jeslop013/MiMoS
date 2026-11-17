@@ -1,0 +1,72 @@
+# Test fixture: the parameter values of the thesis, which are the C++ defaults
+# (cpp/include/mimos/config.hpp). tests/test_config.py checks that both agree.
+# The paths are not used by the tests. Units: times in hours, distances in km.
+# Tables only group keys; every key is a field of cpp/include/mimos/config.hpp.
+
+[run]
+data_dir = "inputs/"
+run_dir = "runs/defaults/"
+n_agents = 20000                      # first N agents of the agenda; see sample_random
+it_number = 2
+print_it = 1                          # write per-iteration outputs every print_it iterations
+seed = 0
+log_level = "WARNING"                 # TRACE, DEBUG, INFO, WARNING, ERROR, CRITICAL
+threads = 0                           # planning threads; 0 = all cores (results do not depend on it)
+legacy_mode = false                   # true: the model version of the thesis
+capacity_scale = 1.0                  # 1 = full capacities; <= 0 = automatic n_agents / population
+
+[utility]                             # thesis eq. "U_route"
+beta_m = -1.0                         # marginal utility of money
+C_limit = -100.0                      # a mode whose constant is below this is not routed
+C_public = -200.0                     # boarding / transfer constant, public transport
+C_rent_bike = -110.0                  # boarding constant, rental bike
+C_walk = 0.0
+C_bike = -220.0
+C_drive = -13.0
+beta_trav_public = -6.0
+beta_d_public = -1e-3                 # small distance term avoids time-degenerate paths
+gamma_d_public = 0.0
+beta_trav_rent_bike = -6.0
+beta_d_rent_bike = 0.0
+gamma_d_rent_bike = 0.0
+beta_trav_walk = -6.0
+beta_d_walk = -1e-3
+beta_trav_bike = -6.0
+beta_d_bike = 0.0
+gamma_d_bike = 0.0
+beta_trav_no_cycleway = -6.0
+beta_trav_drive = -6.0
+beta_trav_delay = -6.0                # extra disutility per hour of remembered delay
+beta_d_drive = 0.0
+gamma_d_drive = 0.2                   # money per km (fuel)
+jam_penalty = 24.0                    # hours of "memory shock" for gridlocked cars
+departure_correction = 0.0            # 0 disables agenda-priority departure corrections
+
+[public_transport]
+city_bus_cap = 80
+reg_bus_cap = 105
+cercanias_cap = 900
+ticket = 0.0
+bike_ticket = 0.0
+
+[drive]
+t_s = 0.000833333333333333333         # 3 s safety time between cars (3/3600 h)
+car_access_speed = 30.0
+fifo_link_exit = false                # blocked cars do not block the cars behind
+stuck_time = 0.0                      # no stuck rule: gridlocks last until the end of the day
+
+[memory]                              # thesis "Memory and learning"
+alpha_l_i = 0.01                      # learning rate, first iteration
+alpha_l_f = 0.01                      # learning rate after k_max iterations
+alpha_f_i = 0.0                       # forgetting rate, first iteration
+alpha_f_f = 0.0
+k_min = 0                             # rates stay at their initial value before k_min
+k_max = 1                             # ... and reach their final value at k_max
+
+[choice]                              # thesis "Deciding preferences"
+beta_choice = 1.0                     # mu of the multinomial logit
+mnl_choice = false                    # false: MCMC after iteration 0
+
+[ownership]
+p_car = 1.0                           # everybody owns a car...
+p_bike = 1.0                          # ...and a bike

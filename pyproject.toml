@@ -1,0 +1,48 @@
+[project]
+name = "mimos"
+version = "0.1.0"
+description = "MiMoS: Microscopic Mobility Simulator, an agent-based model of urban mobility (C++ core, Python API)"
+readme = "README.md"
+requires-python = ">=3.11"  # tomllib
+authors = [{ name = "Jesús Arturo Moreno López", email = "51765671+jeslop013@users.noreply.github.com" }]
+license = { text = "GPL-3.0-or-later" }
+dependencies = [
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+# Visualisation (mimos.viz): HTML run reports (plotly; kaleido for --png) and videos (matplotlib; imageio-ffmpeg provides ffmpeg)
+viz = ["plotly>=5.24", "pandas>=2.1", "kaleido>=1.0", "matplotlib>=3.8", "imageio-ffmpeg>=0.5"]
+# Old names, same as viz
+report = ["mimos[viz]"]
+video = ["mimos[viz]"]
+
+[project.scripts]
+mimos = "mimos.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "plotly>=5.24", "pandas>=2.1", "kaleido>=1.0", "matplotlib>=3.8", "imageio-ffmpeg>=0.5"]  # tests build reports and videos
+
+[build-system]
+# scikit-build-core drives CMake; cmake and ninja are pulled from PyPI automatically,
+# so the only system requirement is a C++17 compiler (MSVC on Windows, clang on macOS).
+requires = ["scikit-build-core>=0.10", "pybind11>=2.13"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+build-dir = "build/{wheel_tag}"
+wheel.packages = ["src/mimos"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.uv]
+# Rebuild the C++ extension on `uv sync` / `uv run` whenever the C++ sources or the build
+# configuration change (uv otherwise reuses the cached build of this project).
+cache-keys = [
+    { file = "pyproject.toml" },
+    { file = "CMakeLists.txt" },
+    { file = "cpp/**/*.cpp" },
+    { file = "cpp/**/*.hpp" },
+]
